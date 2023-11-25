@@ -1,0 +1,30 @@
+# BUSCO version is: 5.4.7 
+# The lineage dataset is: hymenoptera_odb10 (Creation date: 2020-08-05, number of genomes: 40, number of BUSCOs: 5991)
+# Summarized benchmarking in BUSCO notation for file /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/xd.sc.m.contigs.fasta
+# BUSCO was run in mode: euk_genome_met
+# Gene predictor used: metaeuk
+
+	***** Results: *****
+
+	C:97.3%[S:96.9%,D:0.4%],F:0.4%,M:2.3%,n:5991	   
+	5827	Complete BUSCOs (C)			   
+	5806	Complete and single-copy BUSCOs (S)	   
+	21	Complete and duplicated BUSCOs (D)	   
+	26	Fragmented BUSCOs (F)			   
+	138	Missing BUSCOs (M)			   
+	5991	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	1615	Number of scaffolds
+	1615	Number of contigs
+	274682908	Total length
+	0.000%	Percent gaps
+	10 MB	Scaffold N50
+	10 MB	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.1
+	bbtools: 39.01
+	metaeuk: 6.a5d39d9
+	busco: 5.4.7

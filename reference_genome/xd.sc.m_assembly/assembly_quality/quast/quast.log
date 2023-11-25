@@ -1,0 +1,55 @@
+/home/grahamcm/quast/quast.py xd.sc.m.contigs.fasta -o /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-3.10.0-514.2.2.el7.x86_64-x86_64-with-centos-7.3.1611-Core (linux_64)
+  Python version: 2.7.5
+  CPUs number: 48
+
+Started: 2023-11-20 12:06:48
+
+Logging to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 12 (use --threads option to set it manually)
+
+CWD: /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly
+Main parameters: 
+  MODE: default, threads: 12, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+WARNING: Can't draw plots: python-matplotlib is missing or corrupted.
+
+Contigs:
+  Pre-processing...
+  xd.sc.m.contigs.fasta ==> xd.sc.m.contigs
+
+2023-11-20 12:06:59
+Running Basic statistics processor...
+  Contig files: 
+    xd.sc.m.contigs
+  Calculating N50 and L50...
+    xd.sc.m.contigs, N50 = 10436521, L50 = 11, auN = 8439961.1, Total length = 274682908, GC % = 42.85, # N's per 100 kbp =  0.00
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-11-20 12:07:11
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 1: Creating Icarus viewers...
+Done
+
+2023-11-20 12:07:14
+RESULTS:
+  Text versions of total report are saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/report.html
+  Icarus (contig browser) is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/icarus.html
+  Log is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly/canu-assembly/quast.log
+
+Finished: 2023-11-20 12:07:14
+Elapsed time: 0:00:26.045329
+NOTICEs: 3; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

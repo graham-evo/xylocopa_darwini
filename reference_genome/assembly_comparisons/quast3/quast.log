@@ -1,0 +1,72 @@
+/home/grahamcm/quast/quast.py ../verkko_assembly/verkko-contigs.fasta ../hicanu_assembly/canu-assembly/hicanu-contigs.fasta ../hifiasm_assembly/hifiasm_unphased/hifiasm-contigs.fasta -o /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-3.10.0-514.2.2.el7.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.11.5
+  CPUs number: 48
+
+Started: 2023-12-01 20:10:50
+
+Logging to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/quast.log
+NOTICE: Maximum number of threads is set to 12 (use --threads option to set it manually)
+
+CWD: /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/assembly_comparisons
+Main parameters: 
+  MODE: default, threads: 12, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  1  ../verkko_assembly/verkko-contigs.fasta ==> verkko-contigs
+  2  ../hicanu_assembly/canu-assembly/hicanu-contigs.fasta ==> hicanu-contigs
+  3  ../hifiasm_assembly/hifiasm_unphased/hifiasm-contigs.fasta ==> hifiasm-contigs
+
+2023-12-01 20:11:06
+Running Basic statistics processor...
+  Contig files: 
+    1  verkko-contigs
+    2  hicanu-contigs
+    3  hifiasm-contigs
+  Calculating N50 and L50...
+    1  verkko-contigs, N50 = 11978830, L50 = 8, auN = 10124704.6, Total length = 226151990, GC % = 43.40, # N's per 100 kbp =  0.00
+    2  hicanu-contigs, N50 = 10436521, L50 = 11, auN = 8439961.1, Total length = 274682908, GC % = 42.85, # N's per 100 kbp =  0.00
+    3  hifiasm-contigs, N50 = 10477384, L50 = 11, auN = 8299980.9, Total length = 283947198, GC % = 42.53, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/basic_stats/GC_content_plot.pdf
+  Drawing verkko-contigs GC content plot...
+    saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/basic_stats/verkko-contigs_GC_content_plot.pdf
+  Drawing hicanu-contigs GC content plot...
+    saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/basic_stats/hicanu-contigs_GC_content_plot.pdf
+  Drawing hifiasm-contigs GC content plot...
+    saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/basic_stats/hifiasm-contigs_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-12-01 20:11:34
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2023-12-01 20:11:39
+RESULTS:
+  Text versions of total report are saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/report.html
+  PDF version (tables and plots) is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/report.pdf
+  Icarus (contig browser) is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/icarus.html
+  Log is saved to /work/grahamcm/xylocopa/male_hifi/ftp.genome.arizona.edu/Carpenter_bee_GA9-1_GA9-2_Pooled_HiFi_193pM-Cell4/5926_import-dataset/hifiasm_assembly/hifiasm_phased/quast3/quast.log
+
+Finished: 2023-12-01 20:11:39
+Elapsed time: 0:00:49.298810
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

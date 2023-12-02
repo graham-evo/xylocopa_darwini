@@ -1,0 +1,25 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    verkko-contigs  hicanu-contigs  hifiasm-contigs
+# contigs (>= 0 bp)         992             1615            1430           
+# contigs (>= 1000 bp)      992             1615            1430           
+# contigs (>= 5000 bp)      990             1615            1430           
+# contigs (>= 10000 bp)     919             1581            1427           
+# contigs (>= 25000 bp)     400             1023            1130           
+# contigs (>= 50000 bp)     129             434             519            
+Total length (>= 0 bp)      226151990       274682908       283947198      
+Total length (>= 1000 bp)   226151990       274682908       283947198      
+Total length (>= 5000 bp)   226144886       274682908       283947198      
+Total length (>= 10000 bp)  225573139       274394033       283918826      
+Total length (>= 25000 bp)  216445971       264172398       278001780      
+Total length (>= 50000 bp)  207662129       243661712       256364833      
+# contigs                   992             1615            1430           
+Largest contig              20694201        20694604        20694880       
+Total length                226151990       274682908       283947198      
+GC (%)                      43.40           42.85           42.53          
+N50                         11978830        10436521        10477384       
+N90                         104873          44750           50910          
+auN                         10124704.6      8439961.1       8299980.9      
+L50                         8               11              11             
+L90                         72              510             503            
+# N's per 100 kbp           0.00            0.00            0.00           

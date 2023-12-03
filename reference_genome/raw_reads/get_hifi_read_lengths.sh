@@ -8,3 +8,4 @@
 conda activate conda_grahamcm
 
 bioawk -c fastx '{print "Arizona_HiFi," length($seq)}' ../hifi_reads/hifi_reads.bc2025.fastq >> length.csv
+

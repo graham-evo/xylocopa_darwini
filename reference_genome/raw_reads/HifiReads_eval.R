@@ -5,6 +5,7 @@
 library(ggplot2)
 library(dplyr)
 library(cowplot) 
+library(egg)
 
 ## Estimating read length estimates from Arizona Genomics Insitute Hifi Reads after processing
 ##with ccs software and parsing to a .csv file with bioawk
@@ -33,7 +34,7 @@ total.length.plot <- ggplot(read_length_df,
                  color="gold3") +
   geom_vline(data=summary_df,
              aes(xintercept=grp.mean),
-             linetype="dashed",
+             linetype="solid",
              size =0.4) +
   geom_vline(data=summary_df,
              aes(xintercept=grp.median),
@@ -50,8 +51,34 @@ total.length.plot <- ggplot(read_length_df,
   labs(x="Read Length (bp)",
        y= "Frequency of Reads") +
   theme_bw() 
+
+zoomed.length.plot <- ggplot(read_length_df,
+                            aes(x=length)) +
+  geom_histogram(binwidth=100,
+                 alpha=0.5,
+                 position="dodge",
+                 color="gold3") +
+  geom_vline(data=summary_df,
+             aes(xintercept=grp.mean),
+             linetype="solid",
+             size =0.4) +
+  geom_vline(data=summary_df,
+             aes(xintercept=grp.median),
+             linetype="dashed",
+             size =0.4) +
+  geom_vline(data=summary_df,
+             aes(xintercept=grp.max),
+             linetype="dashed",
+             size =0.4) +
+  scale_x_continuous(limits = c(0, 20000),
+                     breaks = seq(0, max(read_length_df$length),2500)) +
+  scale_y_continuous(limits = c(0, 13000),
+                     breaks = seq(0, 13000, 2000)) +
+  labs(x="Read Length (bp)",
+       y= "Frequency of Reads") +
+  theme_bw()
   
-kb.length.plot <- ggplot(read_length_df,
+#kb.length.plot <- ggplot(read_length_df,
                               aes(x=length)) +
     geom_histogram(binwidth=50,
                    alpha=0.5,
@@ -59,7 +86,7 @@ kb.length.plot <- ggplot(read_length_df,
                    color = "gold3") +
     geom_vline(data=summary_df,
                aes(xintercept=grp.mean),
-               linetype="dashed",
+               linetype="solid",
                size =0.4) +
     geom_vline(data=summary_df,
                aes(xintercept=grp.median),
@@ -78,4 +105,7 @@ kb.length.plot <- ggplot(read_length_df,
     theme_bw() 
   
 # Merge both the read-length distribution plots 
-plot <- plot_grid(total.length.plot, kb.length.plot, ncol = 1) # Save the figure using the file name, ‘‘read.length.pdf’’ pdf("read.length.pdf",width=6,height=8,paper=’special’) print(plot)
+plot <- plot_grid(total.length.plot, zoomed.length.plot, ncol = 1) # Save the figure using the file name, ‘‘read.length.pdf’’ pdf("read.length.pdf",width=6,height=8,paper=’special’) print(plot)
+ggarrange(total.length.plot,
+          zoomed.length.plot
+            )

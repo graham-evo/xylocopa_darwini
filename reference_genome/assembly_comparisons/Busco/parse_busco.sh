@@ -46,40 +46,40 @@ ASSEMBLY2=hifiasm-assembly
 
 cat busco_report.$ASSEMBLY2.txt | \
 grep "(S)" | \
-awk -v strain="$PREFIX2" ’{print strain", "$1}’ > complete_single.txt
+awk -v assembly="$ASSEMBLY2" '{print assembly", "$1}' > complete_single.txt
 
 cat busco_report.$ASSEMBLY2.txt | \
 grep "(D)" | \
-awk ’{print $1}’ > complete_duplicated.txt
+awk '{print $1}' > complete_duplicated.txt
 
 cat busco_report.$ASSEMBLY2.txt | \
 grep "(F)" | \
-awk ’{print $1}’ > fragmented.txt
+awk '{print $1}' > fragmented.txt
 
 cat busco_report.$ASSEMBLY2.txt | \
 grep "(M)" | \
-awk ’{print $1}’ > missing.txt
+awk '{print $1}' > missing.txt
 
 paste -d "," complete_single.txt complete_duplicated.txt fragmented.txt missing.txt >> busco.csv
 
-# Finally wit verkko assembly
+# Finally with verkko assembly
 
 ASSEMBLY3=verkko-assembly
 
 cat busco_report.$ASSEMBLY3.txt | \
 grep "(S)" | \
-awk -v strain="$PREFIX2" ’{print strain", "$1}’ > complete_single.txt
+awk -v assembly="$ASSEMBLY3" '{print assembly", "$1}' > complete_single.txt
 
 cat busco_report.$ASSEMBLY3.txt | \
 grep "(D)" | \
-awk ’{print $1}’ > complete_duplicated.txt
+awk '{print $1}' > complete_duplicated.txt
 
 cat busco_report.$ASSEMBLY3.txt | \
 grep "(F)" | \
-awk ’{print $1}’ > fragmented.txt
+awk '{print $1}' > fragmented.txt
 
 cat busco_report.$ASSEMBLY3.txt | \
 grep "(M)" | \
-awk ’{print $1}’ > missing.txt
+awk '{print $1}' > missing.txt
 
 paste -d "," complete_single.txt complete_duplicated.txt fragmented.txt missing.txt >> busco.csv
